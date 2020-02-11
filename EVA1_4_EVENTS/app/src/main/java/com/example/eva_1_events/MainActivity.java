@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void MiClick(View v){
-        afklafskmlkpafkaf
+
     }
 
 }
