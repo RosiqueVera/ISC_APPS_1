@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">EVA_1_6_IDIOMA</string>
+
+    <string name="Languaje_es">Selecciona el idioma</string>
+    <string name="Languaje_en">Choose the language</string>
+
+    <string name="English_es">Inglés</string>
+    <string name="English_en">English</string>
+
+    <string name="Spanish_es">Español</string>
+    <string name="Spanish_en">Spanish</string>
+
+    <string name="Name_es">Nombre</string>
+    <string name="Name_en">Name</string>
+
+    <string name="txt_Name_es">Introduce tu nombre</string>
+    <string name="txt_Name_en">Input your name</string>
+
+    <string name="Frist_Name_es">Apellido</string>
+    <string name="Frist_Name_en">Frist Name</string>
+
+    <string name="txt_Frist_Name_es">Introduce tu Apellido</string>
+    <string name="txt_Frist_Name_en">Input your frsit name</string>
+
+    <string name="Age_es">Edad</string>
+    <string name="Age_en">Age</string>
+
+    <string name="txt_Age_es">Introduce tu Edad</string>
+    <string name="txt_Age_en">Input your Age</string>
+</resources>
