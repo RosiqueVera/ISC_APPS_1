@@ -14,19 +14,20 @@
         android:text="Selecciona el idioma" />
 
     <RadioGroup
+        android:id="@+id/Languaje"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:checkedButton="@id/Spanish"
+        android:checkedButton="@id/Languaje_Es"
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/Spanish"
+            android:id="@+id/Languaje_Es"
             android:layout_width="173dp"
             android:layout_height="wrap_content"
             android:text="Español" />
 
         <RadioButton
-            android:id="@+id/English"
+            android:id="@+id/Languaje_En"
             android:layout_width="237dp"
             android:layout_height="wrap_content"
             android:text="Inglés" />
@@ -47,13 +48,13 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/Frist_Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Apellido" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txt_Frist_Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -61,13 +62,13 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/Age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Edad" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/txt_Age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

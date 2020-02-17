@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void MiClick(View v){
-
+        Toast.makeText(this,"Por XML",Toast.LENGTH_SHORT).show();
     }
 
 }
