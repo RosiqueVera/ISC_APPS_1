@@ -1,4 +1,9 @@
 package com.example.eva1_7_orientation;
+/*
+* Oscar Alejandro Rosique Vera
+* 17550484
+* ISC
+* APP1*/
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btn_Mens.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Hola mundo",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),btn_Mens.getText()+"",Toast.LENGTH_SHORT).show();    //Lo que hacemos aqui es que dependiendo de la orientación del telefono vamos a desplegar un mensaje que nos va a indicar en que orientación estamos por el texto que contendrá el botón con el mismo ID en cada una de las orientaciones
             }
         });
     }

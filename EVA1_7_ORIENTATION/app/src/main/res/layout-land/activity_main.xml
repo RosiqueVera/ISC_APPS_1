@@ -12,5 +12,5 @@
         android:id="@+id/Mensaje"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Landscape" />
 </LinearLayout>

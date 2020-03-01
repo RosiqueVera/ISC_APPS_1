@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EVA1_6_IDIOMA</string>
+
+    <string name="idioma_es">Selecciona el Idioma:</string>
+    <string name="idioma_en">Choose the Language:</string>
+
+    <string name="espanol">Español</string>
+    <string name="ingles_es">Inglés</string>
+
+    <string name="espanol_en">Spanish</string>
+    <string name="ingles_en">English</string>
+
+    <string name="nombre_es">Nombre</string>
+    <string name="nombre_en">Name</string>
+
+    <string name="txt_apellido">Apellido</string>
+    <string name="txt_apellido_en">Last Name</string>
+
+</resources>
