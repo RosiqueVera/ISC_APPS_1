@@ -1,74 +1,105 @@
+/**
+ * EVA1_6_IDIOMA - using string resources to change the language in an app
+ * <p>
+ * written by: Luis Carlos Cruz Castillo
+ * 17550448
+ * APPS1
+ * 01/03/2020
+ */
 package com.example.eva1_6_idioma;
-
-/*
-Oscar Alejandro Rosique Vera
-17550484
-ISC
-APP1
-*/
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener{
-    //Definimos variables de tipo TexView, RadioGroup,RadioButton y EdditText para linkearlos con los componentes en nuestra activity
+/*
+* Oscar Alejandro Rosique Vera
+* 17550484
+* ISC
+* APP1*/
+
+public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
+    /*
+    * Creamos las variables para vincular  el objeto de nuestra interfaz*/
     TextView txtIdioma;
     TextView txtNombre;
     TextView txtApellido;
     TextView txtEdad;
+    TextView lblNombre;
+    TextView lblApellido;
+    TextView lblEdad;
 
     RadioGroup rdGrpIdioma;
 
     RadioButton rdBtnEs;
     RadioButton rdBtnEn;
 
-    EditText edtTxtNombre;
-    EditText edtTxtApellido;
-    EditText edtTxtEdad;
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         /*
-        Linkeamos las variables globales con su respectivo componente para poder usarlos mediante el método findViewById
-        Recibe como parametro R que es de donde proceden todos los componentes, es decir sus ID se alojan ahí
-        */
+        * Vinculamos todas las variables con su respectivo objeto en interfaz*/
+
         txtIdioma = findViewById(R.id.txtIdioma);
+
+        lblNombre = findViewById(R.id.lblNombre);
         txtNombre = findViewById(R.id.txtNombre);
+
+        lblApellido = findViewById(R.id.lblApellido);
         txtApellido = findViewById(R.id.txtApellido);
+
+        lblEdad = findViewById(R.id.lblEdad);
+        txtEdad = findViewById(R.id.txtEdad);
 
         rdGrpIdioma = findViewById(R.id.rdGrpIdioma);
         rdBtnEn = findViewById(R.id.rdBtnEn);
         rdBtnEs = findViewById(R.id.rdBtnEs);
 
-        edtTxtNombre = findViewById(R.id.edtTxtNombre);
-        edtTxtApellido = findViewById(R.id.edtTxtApellido);
-        edtTxtEdad = findViewById(R.id.edtTxtEdad);
-
         rdGrpIdioma.setOnCheckedChangeListener(this);
 
     }
-    //Método que es exclusivo de los radioGroup el cual detecta un cambio  de selección de algún RadioButton pertenecientes a él.
+
+    /*
+    * En este método vamos a identificar que botón es el que se seleccionó para de esta forma
+    *  Cambiar el texto de los componentes con las variables que creamos en Strings.xml*/
+
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        //Hacemos una comparación entre el RButton seleccionado y otro mediante su id
-        if(checkedId == R.id.rdBtnEs){
-            txtIdioma.setText(R.string.idioma_es);
+        if (checkedId == R.id.rdBtnEs) {
+            txtIdioma.setText(R.string.idioma);
+
             rdBtnEs.setText(R.string.espanol);
             rdBtnEn.setText(R.string.ingles_es);
-        }else{
+
+            lblNombre.setText(R.string.nombre);
+            txtNombre.setHint(R.string.txt_nombre);
+
+            lblApellido.setText(R.string.apellido);
+            txtApellido.setHint(R.string.txt_apellido);
+
+            lblEdad.setText(R.string.edad);
+            txtEdad.setHint(R.string.txt_edad);
+
+        } else {
             txtIdioma.setText(R.string.idioma_en);
-            rdBtnEs.setText(R.string.idioma_en);
-            rdBtnEn.setText(R.string.espanol_en);
+
+            rdBtnEs.setText(R.string.espanol_en);
+            rdBtnEn.setText(R.string.ingles);
+
+            lblNombre.setText(R.string.nombre_en);
+            txtNombre.setHint(R.string.txt_nombre_en);
+
+            lblApellido.setText(R.string.apellido_en);
+            txtApellido.setHint(R.string.txt_apellido_en);
+
+            lblEdad.setText(R.string.edad_en);
+            txtEdad.setHint(R.string.txt_edad_en);
+
         }
     }
 }

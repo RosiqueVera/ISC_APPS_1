@@ -1,19 +1,36 @@
 <resources>
     <string name="app_name">EVA1_6_IDIOMA</string>
+        <!--Creamos unas variables en nuestro proyecto los cuales van a contener el valor "Texto a formatear
+            en el idioma que deseamos trabajar, cada una de ellas va a llamarse por el objeto a cambiar
+            Seguido de un _ y las iniciales del idioma seleccionado.
+        -->
+    <string name="idioma">selecciona el idioma:</string>
+    <string name="idioma_en">choose the language:</string>
 
-    <string name="idioma_es">Selecciona el Idioma:</string>
-    <string name="idioma_en">Choose the Language:</string>
+    <string name="espanol">español</string>
+    <string name="ingles_es">inglés</string>
 
-    <string name="espanol">Español</string>
-    <string name="ingles_es">Inglés</string>
+    <string name="espanol_en">spanish</string>
+    <string name="ingles">english</string>
 
-    <string name="espanol_en">Spanish</string>
-    <string name="ingles_en">English</string>
+    <string name="nombre">nombre:</string>
+    <string name="nombre_en">name:</string>
 
-    <string name="nombre_es">Nombre</string>
-    <string name="nombre_en">Name</string>
+    <string name="txt_nombre">ingresa tu nombre</string>
+    <string name="txt_nombre_en">introduce your name</string>
 
-    <string name="txt_apellido">Apellido</string>
-    <string name="txt_apellido_en">Last Name</string>
+    <string name="apellido">apellido:</string>
+    <string name="apellido_en">last name:</string>
+
+    <string name="txt_apellido">ingresa tu apellido</string>
+    <string name="txt_apellido_en">introduce your last name</string>
+
+    <string name="edad">edad:</string>
+    <string name="edad_en">age:</string>
+
+    <string name="txt_edad">ingresa tu edad</string>
+    <string name="txt_edad_en">introduce your age</string>
+
+
 
 </resources>

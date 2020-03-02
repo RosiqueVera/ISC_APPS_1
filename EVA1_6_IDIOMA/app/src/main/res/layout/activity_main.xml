@@ -11,7 +11,7 @@
         android:id="@+id/txtIdioma"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Selecciona el Idioma" />
+        android:text="Selecciona el idioma" />
 
     <RadioGroup
         android:id="@+id/rdGrpIdioma"
@@ -34,45 +34,45 @@
     </RadioGroup>
 
     <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Nombre:" />
+
+    <EditText
         android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre" />
-
-    <EditText
-        android:id="@+id/edtTxtNombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Ingresa tu Nombre"
+        android:hint="Ingresa tu nombre"
         android:inputType="textPersonName" />
 
     <TextView
+        android:id="@+id/lblApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Apellido:" />
+
+    <EditText
         android:id="@+id/txtApellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Apellido" />
-
-    <EditText
-        android:id="@+id/edtTxtApellido"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Ingresa tu Apellido"
+        android:hint="Ingresa tu apellido"
         android:inputType="textPersonName" />
 
     <TextView
+        android:id="@+id/lblEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edad:" />
+
+    <EditText
         android:id="@+id/txtEdad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Edad" />
-
-    <EditText
-        android:id="@+id/edtTxtEdad"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Ingresa tu Edad"
+        android:hint="Ingresa tu edad"
         android:inputType="number" />
 
 </LinearLayout>
