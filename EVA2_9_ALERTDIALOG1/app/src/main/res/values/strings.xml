@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EVA2_9_ALERTDIALOG1</string>
+    <string name="alert_dialog_box_1">Alert Dialog Box</string>
+    <string name="dialog_box_demo">Dialog Box Demo</string>
+    <string name="custom_dialog_box">Custom Dialog Box</string>
+    <string name="alert_dialog_fragment">Alert Dialog Fragment</string>
+    <string name="hello_world">hello world</string>
+</resources>
